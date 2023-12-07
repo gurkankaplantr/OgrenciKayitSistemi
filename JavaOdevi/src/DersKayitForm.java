@@ -51,7 +51,7 @@ public class DersKayitForm extends JFrame {
         String dosyaYolu = "ders.csv";
 
         try (PrintWriter writer = new PrintWriter(new FileWriter(dosyaYolu, true))) {
-            // Dosyaya ders bilgilerini ekleyin (CSV formatında)
+            // Dosyaya ders bilgilerini eklesin.
             writer.println(bilgi1 + "," + bilgi2 + "," + bilgi3);
             writer.flush();
         } catch (IOException ex) {
